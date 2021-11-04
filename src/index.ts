@@ -1,5 +1,6 @@
 import { CreateApp } from "@graphql-ez/fastify";
 import { ezAltairIDE } from "@graphql-ez/plugin-altair";
+import { ezCodegen } from "@graphql-ez/plugin-codegen";
 import { ezSchema, gql } from "@graphql-ez/plugin-schema";
 import Fastify from "fastify";
 
@@ -24,6 +25,9 @@ const ez = CreateApp({
       }),
       ezAltairIDE({
         initialQuery: "{hello}",
+      }),
+      ezCodegen({
+        outputSchema: true,
       }),
     ],
   },

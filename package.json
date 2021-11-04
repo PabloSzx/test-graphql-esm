@@ -9,6 +9,7 @@
   "dependencies": {
     "@graphql-ez/fastify": "^0.9.4",
     "@graphql-ez/plugin-altair": "^0.9.4",
+    "@graphql-ez/plugin-codegen": "^0.7.5",
     "@graphql-ez/plugin-schema": "^0.8.1",
     "fastify": "^3.22.1",
     "graphql": "npm:graphql-esm@^16.0.1",
